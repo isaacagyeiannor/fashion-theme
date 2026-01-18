@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Theme | Atelier Moodboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <div class="logo">Atelier</div>
+        <nav class="nav-links">
+          <a href="#" class="active">Discover</a>
+          <a href="#">Lookbook</a>
+          <a href="#">Collections</a>
+          <a href="#">About</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="pill">Sign in</button>
+          <button class="pill solid">Create</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Autumn / Winter 2024</p>
+          <h1>Curate a tactile wardrobe with modern romance.</h1>
+          <p class="subtext">
+            A pinterest-inspired fashion moodboard with layered textures, airy silhouettes, and
+            moody palettes. Tap the chips to filter, then save your favorite edits.
+          </p>
+          <div class="hero-actions">
+            <div class="search">
+              <span class="search-icon">⌕</span>
+              <input type="text" placeholder="Search looks, fabrics, colors" />
+            </div>
+            <button class="pill solid">Explore boards</button>
+          </div>
+          <div class="chips" role="tablist" aria-label="Filter outfits">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="minimal">Minimal</button>
+            <button class="chip" data-filter="street">Street</button>
+            <button class="chip" data-filter="editorial">Editorial</button>
+            <button class="chip" data-filter="soft">Soft tones</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-content">
+            <div>
+              <p class="eyebrow">Featured Capsule</p>
+              <h2>Muted tailoring with sculpted knits.</h2>
+            </div>
+            <div class="mini-grid">
+              <div class="mini-photo photo-1"></div>
+              <div class="mini-photo photo-2"></div>
+              <div class="mini-photo photo-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="board">
+        <div class="board-header">
+          <div>
+            <h3>Curated pins</h3>
+            <p>Mix and match to build your next lookbook.</p>
+          </div>
+          <div class="board-toggle">
+            <span class="toggle-label">Sort</span>
+            <button class="toggle active" data-sort="popular">Popular</button>
+            <button class="toggle" data-sort="new">Newest</button>
+          </div>
+        </div>
+
+        <div class="grid" id="fashionGrid">
+          <article class="card" data-category="minimal" data-popularity="94">
+            <div class="card-media media-1">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Minimal</span>
+            </div>
+            <div class="card-body">
+              <h4>Ivory pleats & linen layers</h4>
+              <p>Neutral palette / breathable textiles</p>
+            </div>
+          </article>
+          <article class="card" data-category="street" data-popularity="86">
+            <div class="card-media media-2">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Street</span>
+            </div>
+            <div class="card-body">
+              <h4>Utility trench with sneakers</h4>
+              <p>Urban energy / practical details</p>
+            </div>
+          </article>
+          <article class="card" data-category="editorial" data-popularity="97">
+            <div class="card-media media-3">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Editorial</span>
+            </div>
+            <div class="card-body">
+              <h4>Glossy satin & sculptural shapes</h4>
+              <p>Studio lighting / dramatic curves</p>
+            </div>
+          </article>
+          <article class="card" data-category="soft" data-popularity="88">
+            <div class="card-media media-4">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Soft tones</span>
+            </div>
+            <div class="card-body">
+              <h4>Blush knit with wool mini</h4>
+              <p>Pastel gradient / cozy finish</p>
+            </div>
+          </article>
+          <article class="card" data-category="minimal" data-popularity="91">
+            <div class="card-media media-5">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Minimal</span>
+            </div>
+            <div class="card-body">
+              <h4>Structured blazer dress</h4>
+              <p>Sharp lines / silver accents</p>
+            </div>
+          </article>
+          <article class="card" data-category="street" data-popularity="83">
+            <div class="card-media media-6">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Street</span>
+            </div>
+            <div class="card-body">
+              <h4>Denim set with layered tees</h4>
+              <p>Mix-and-match / casual energy</p>
+            </div>
+          </article>
+          <article class="card" data-category="editorial" data-popularity="93">
+            <div class="card-media media-7">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Editorial</span>
+            </div>
+            <div class="card-body">
+              <h4>Velvet corset & sweeping skirt</h4>
+              <p>Monochrome / elevated drama</p>
+            </div>
+          </article>
+          <article class="card" data-category="soft" data-popularity="89">
+            <div class="card-media media-8">
+              <button class="save" aria-label="Save look">♡</button>
+              <span class="tag">Soft tones</span>
+            </div>
+            <div class="card-body">
+              <h4>Cloud cashmere lounge set</h4>
+              <p>Soft touch / slow mornings</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>Atelier Weekly</h3>
+          <p>Get curated fashion pins and trend forecasts every Thursday.</p>
+        </div>
+        <form class="newsletter">
+          <input type="email" placeholder="Email address" required />
+          <button class="pill solid" type="submit">Subscribe</button>
+        </form>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
